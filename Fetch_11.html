@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+<title>João 8.32</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: 'Open Sans', sans-serif;
+}
+</style>
+</head>
+<body>
+<p id="demo">Esse texto será mudado...</p>
+<script>
+fetch ("https://www.abibliadigital.com.br/api/verses/nvi/jo/8/32")
+.then(x => x.json())
+.then(data => document.getElementById("demo").innerHTML = data.text);
+</script>
+</body>
+</html>
